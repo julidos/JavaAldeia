@@ -1,1 +1,104 @@
-<h1 align="center">🥷 Desafio Java - Sistema de Cadastro de Ninjas 🛡️</h1> <p align="center"> <img src="https://img.shields.io/badge/Java-17-blue.svg" alt="Java Badge"> <img src="https://img.shields.io/badge/Projeto-Concluído-success.svg" alt="Status Badge"> </p> <p align="center"> Desafio proposto para consolidar conhecimentos de POO em Java, focado em abstração, herança, polimorfismo, interfaces e enums. <br> Simulação de um sistema completo para cadastro e gerenciamento de ninjas da Vila da Folha. </p> <hr> <h2>📋 Descrição do Desafio</h2> <p> O desafio consistia em desenvolver um sistema para gerenciar diferentes tipos de ninjas, utilizando conceitos avançados de <strong>Programação Orientada a Objetos (POO)</strong> em Java. </p> <h3>📌 Requisitos do Desafio:</h3> <ul> <li>Criar uma <strong>interface</strong> chamada <code>CadastroNinja</code> com métodos para cadastrar, listar, atualizar e excluir ninjas.</li> <li>Criar uma <strong>classe abstrata</strong> chamada <code>Ninja</code> contendo atributos comuns (nome, idade, aldeia, rank) e método abstrato <code>mostrarInformacoes()</code>.</li> <li>Adicionar um atributo <code>id</code> gerado automaticamente para cada ninja cadastrado.</li> <li>Criar duas classes concretas: <ul> <li><code>NinjaBasico</code>: representa um ninja com informações básicas.</li> <li><code>NinjaAvancado</code>: representa um ninja com um <code>jutsuEspecial</code> adicional.</li> </ul> </li> <li>Implementar um <code>enum</code> chamado <code>Rank</code> com valores como <code>GENIN</code>, <code>CHUNIN</code>, <code>JOUNIN</code> e <code>ANBU</code>.</li> <li>Implementar outro <code>enum</code> chamado <code>Aldeia</code> para indicar a origem dos ninjas (ex: FOLHA, NEVOA, AREIA, NUVEM).</li> <li>Desenvolver um sistema de menu interativo utilizando <code>Scanner</code>, <code>switch case</code> e <code>laços de repetição</code>.</li> </ul> <h3>🎯 Desafio Extra</h3> <ul> <li>Utilizar sobrecarga e sobrescrita de métodos.</li> <li>Implementar sistema de IDs automáticos para os cadastros.</li> <li>Adicionar tratativas de validação para entradas inválidas no menu.</li> </ul> <hr> <h2>🛠️ Como foi feito</h2> <p> O projeto foi desenvolvido aplicando os conceitos centrais de POO. A classe abstrata <code>Ninja</code> concentra as informações comuns, enquanto <code>NinjaBasico</code> e <code>NinjaAvancado</code> expandem os comportamentos específicos. </p> <p> A utilização dos <code>enums</code> <strong>Rank</strong> e <strong>Aldeia</strong> trouxe mais robustez e segurança ao sistema. O menu interativo com <code>Scanner</code> permite ao usuário cadastrar, listar, atualizar e excluir ninjas de forma prática e intuitiva. </p> <hr> <h2>📁 Estrutura do Projeto</h2> <pre> ├── CadastroNinja.java ├── SistemaCadastroNinja.java ├── Ninja.java ├── NinjaBasico.java ├── NinjaAvancado.java ├── Rank.java └── Aldeia.java </pre> <hr> <h2>🚀 Como Executar</h2> <ol> <li>Clone o repositório</li> <li>Abra em sua IDE Java preferida (IntelliJ, Eclipse, VSCode...)</li> <li>Compile e execute a classe <code>SistemaCadastroNinja</code></li> </ol> <hr> <h2>📌 Tecnologias Utilizadas</h2> <ul> <li>Java 17</li> <li>POO (Programação Orientada a Objetos)</li> </ul> <hr> <h2>🧠 Aprendizados</h2> <p> Este desafio foi fundamental para reforçar os conceitos de abstração, herança, polimorfismo e interfaces em Java. Além disso, trabalhar com enums, manipulação de listas e criação de sistemas interativos proporcionou uma experiência prática valiosa no desenvolvimento de sistemas orientados a objetos. </p> <hr> <h2>🤝 Contato</h2> <p> Feito com 💙 por Juliano Oliveira. Entre em contato pelo GitHub ou LinkedIn! </p>
+<h1 align="center">🥷 Desafio Java - Sistema de Cadastro de Ninjas 🛡️</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-blue.svg" alt="Java Badge">
+  <img src="https://img.shields.io/badge/Projeto-Concluído-success.svg" alt="Status Badge">
+</p>
+
+<p align="center">
+  Desafio proposto para consolidar conhecimentos de POO em Java, focado em abstração, herança, polimorfismo, interfaces e enums.
+  <br>
+  Simulação de um sistema completo para cadastro e gerenciamento de ninjas da Vila da Folha.
+</p>
+
+<hr>
+
+<h2>📋 Descrição do Desafio</h2>
+
+<p>
+  O desafio consistia em desenvolver um sistema para gerenciar diferentes tipos de ninjas, utilizando conceitos avançados de <strong>Programação Orientada a Objetos (POO)</strong> em Java.
+</p>
+
+<h3>📌 Requisitos do Desafio:</h3>
+<ul>
+  <li>Criar uma <strong>interface</strong> chamada <code>CadastroNinja</code> com métodos para cadastrar, listar, atualizar e excluir ninjas.</li>
+  <li>Criar uma <strong>classe abstrata</strong> chamada <code>Ninja</code> contendo atributos comuns (nome, idade, aldeia, rank) e método abstrato <code>mostrarInformacoes()</code>.</li>
+  <li>Adicionar um atributo <code>id</code> gerado automaticamente para cada ninja cadastrado.</li>
+  <li>Criar duas classes concretas:
+    <ul>
+      <li><code>NinjaBasico</code>: representa um ninja com informações básicas.</li>
+      <li><code>NinjaAvancado</code>: representa um ninja com um <code>jutsuEspecial</code> adicional.</li>
+    </ul>
+  </li>
+  <li>Implementar um <code>enum</code> chamado <code>Rank</code> com valores como <code>GENIN</code>, <code>CHUNIN</code>, <code>JOUNIN</code> e <code>ANBU</code>.</li>
+  <li>Implementar outro <code>enum</code> chamado <code>Aldeia</code> para indicar a origem dos ninjas (ex: FOLHA, NEVOA, AREIA, NUVEM).</li>
+  <li>Desenvolver um sistema de menu interativo utilizando <code>Scanner</code>, <code>switch case</code> e <code>laços de repetição</code>.</li>
+</ul>
+
+<h3>🎯 Desafio Extra</h3>
+<ul>
+  <li>Utilizar sobrecarga e sobrescrita de métodos.</li>
+  <li>Implementar sistema de IDs automáticos para os cadastros.</li>
+  <li>Adicionar tratativas de validação para entradas inválidas no menu.</li>
+</ul>
+
+<hr>
+
+<h2>🛠️ Como foi feito</h2>
+
+<p>
+  O projeto foi desenvolvido aplicando os conceitos centrais de POO. A classe abstrata <code>Ninja</code> concentra as informações comuns, enquanto <code>NinjaBasico</code> e <code>NinjaAvancado</code> expandem os comportamentos específicos.
+</p>
+
+<p>
+  A utilização dos <code>enums</code> <strong>Rank</strong> e <strong>Aldeia</strong> trouxe mais robustez e segurança ao sistema. O menu interativo com <code>Scanner</code> permite ao usuário cadastrar, listar, atualizar e excluir ninjas de forma prática e intuitiva.
+</p>
+
+<hr>
+
+<h2>📁 Estrutura do Projeto</h2>
+
+<pre>
+├── CadastroNinja.java
+├── SistemaCadastroNinja.java
+├── Ninja.java
+├── NinjaBasico.java
+├── NinjaAvancado.java
+├── Rank.java
+└── Aldeia.java
+</pre>
+
+<hr>
+
+<h2>🚀 Como Executar</h2>
+
+<ol>
+  <li>Clone o repositório</li>
+  <li>Abra em sua IDE Java preferida (IntelliJ, Eclipse, VSCode...)</li>
+  <li>Compile e execute a classe <code>SistemaCadastroNinja</code></li>
+</ol>
+
+<hr>
+
+<h2>📌 Tecnologias Utilizadas</h2>
+
+<ul>
+  <li>Java 17</li>
+  <li>POO (Programação Orientada a Objetos)</li>
+</ul>
+
+<hr>
+
+<h2>🧠 Aprendizados</h2>
+
+<p>
+  Este desafio foi fundamental para reforçar os conceitos de abstração, herança, polimorfismo e interfaces em Java. Além disso, trabalhar com enums, manipulação de listas e criação de sistemas interativos proporcionou uma experiência prática valiosa no desenvolvimento de sistemas orientados a objetos.
+</p>
+
+<hr>
+
+<h2>🤝 Contato</h2>
+
+<p>
+  Feito com 💙 por Juliano Oliveira. Entre em contato pelo <a href="https://github.com/julidos">GitHub</a> ou <a href="https://www.linkedin.com/in/juliano-oliveira/">LinkedIn</a>!
+</p>
